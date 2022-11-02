@@ -1,1 +1,1 @@
-# rock-paper-scissors
+# A short game that I made with JavaScript
