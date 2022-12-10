@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 class="top-header">ROCK, PAPER, SCISSORS</h1>
-    <p style="text-align: center; font-weight: 300; margin-top: 30px; font-size: 25px; font-style: italic;">-first to five wins-</p>
+    <p class="first-to-five">-first to five wins-</p>
     <div class="scoreboard">
         <div class="cont-board p-score-container">
             <p class="user player">Player</p>
@@ -20,10 +20,10 @@
             <div class="score score-comp"></div>
         </div>
     </div>
+
+    <div class="message">Pick your choice</div>
+
         <div class="container">
-            
-            <div class="message">Pick your choice</div>
-            
             <div class="choice">
                 <div class="icon-container">
                     <div class="icon">
@@ -87,6 +87,14 @@
         font-weight: 700;
     }
 
+    .first-to-five {
+        text-align: center;
+        font-weight: 300;
+        margin-top: 30px;
+        font-size: 25px;
+        font-style: italic;
+    }
+
     .scoreboard {
         display: flex;
         justify-content: space-around;
@@ -133,7 +141,7 @@
     }
 
     .image:hover {
-        transform: scale(1.1);
+        transform: scale(1.11);
     }
 
     .image:active {
@@ -155,13 +163,6 @@
     .comp-char {
         margin: -5rem 3.8rem 0 4rem;
         font-weight: 400;
-    }
-    
-    .upper {
-        text-align: center;
-        margin-top: 13rem;
-        font-size: 2rem;
-        font-weight: 600;
     }
 
     .message {
@@ -185,6 +186,306 @@
         opacity: 1;
     }
 
+    @media only screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+
+    .top-header {
+        font-size: 1.7rem;
+        text-shadow: 0 2px whitesmoke;
+        margin-top: 2rem;
+    }
+
+    .first-to-five {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1.4rem;
+    }
+
+    .user {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        width: 7rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        font-size: 1.4rem;
+    }
+}
+
+    @media only screen and (max-width: 320px) {
+    .top-header {
+        font-size: 1.2rem;
+        text-shadow: 0px 2px whitesmoke;
+        margin-top: 2rem;
+    }
+
+    .first-to-five {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1rem;
+    }
+
+    .user {
+        font-size: 1rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        width: 5rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+    @media only screen and (max-width: 280px) and (max-height: 653px) {
+    .top-header {
+        font-size: 1.5rem;
+        text-shadow: 0 2px whitesmoke;
+        margin-top: 3rem;
+    }
+
+    .first-to-five {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1.5rem;
+    }
+
+    .user {
+        font-size: 1rem;
+        margin-top: 4rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        margin-top: 2rem;
+        width: 5rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        margin-top: 0.1rem;
+        font-size: 1rem;
+    }
+}
+
+    @media only screen and (min-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+
+    .top-header {
+        font-size: 2.7rem;
+        text-shadow: 0 2px whitesmoke;
+        margin-top: 2rem;
+    }
+
+    .first-to-five {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1.7rem;
+    }
+
+    .user {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        margin-top: -2rem;
+        width: 12rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        margin-top: -2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    .top-header {
+        font-size: 2.7rem;
+        text-shadow: 0 2px whitesmoke;
+        margin-top: 2rem;
+    }
+
+    .first-to-five {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1.7rem;
+    }
+
+    .user {
+        font-size: 1.7rem;
+        margin-top: 2rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        margin-top: -6rem;
+        width: 12rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        margin-top: -3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .container {
+        margin-top: -8rem;
+    }
+
+    .top-header {
+        font-size: 2rem;
+        text-shadow: 0 2px whitesmoke;
+        margin-top: 2rem;
+    }
+
+    .first-to-five {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .score {
+        font-size: 1.7rem;
+    }
+
+    .user {
+        font-size: 1.7rem;
+    }
+
+    .cont-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image {
+        width: 9rem;
+        margin-top: 1rem;
+        filter: drop-shadow(0px 10px 4px rgb(150, 149, 149));
+    }
+    
+    .message {
+        font-size: 1.4rem;
+        margin-top: -3rem;
+    }
+}
 </style>
 
 </html>
